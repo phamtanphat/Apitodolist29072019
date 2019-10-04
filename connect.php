@@ -33,17 +33,17 @@
     */
 
     $hostname = "localhost";
-    $username = "roo";
+    $username = "root";
     $password = "";
     $databasename = "quanlycongviec2907";
 
     $con = mysqli_connect($hostname , $username,$password,$databasename);
-
-    if($con == false){
-        echo "Loi" . mysqli_connect_error();
-    }else{
-        echo "Thanh cong";
-    }
+    mysqli_query($con , "SET NAMES 'utf8' ");
+    // if(mysqli_connect_errno()){
+    //     echo "Loi" . mysqli_connect_error();
+    // }else{
+    //     echo "Thanh cong";
+    // }
 
 
 ?>
