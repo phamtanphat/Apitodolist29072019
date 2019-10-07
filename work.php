@@ -4,9 +4,9 @@
 
     $iduser = $_POST['iduser'];
     class Work {
-        function __construct($id,$workname,$time){
+        function __construct($id,$projectname,$time){
             $this->id=$id;
-            $this->workname=$workname;
+            $this->projectname=$projectname;
             $this->time=$time;
         }
     }
