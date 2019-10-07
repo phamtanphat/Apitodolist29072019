@@ -1,5 +1,4 @@
 <?php
-
     require("connect.php");
 
     $username = $_POST['username'];
